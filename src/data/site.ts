@@ -9,8 +9,8 @@ export const site = {
   /** Optional: Facebook profile URL – verified badge links here when set */
   facebookUrl: "" as string | undefined,
   email: "sophiacalimbo@email.com",
-  // calendlyUrl: "https://calendly.com/your-link",
-  // blogUrl: "https://blog.yoursite.com",
+  calendlyUrl: "https://calendly.com/your-link",
+  blogUrl: "https://blog.yoursite.com",
   linkedin: "https://linkedin.com/in/yourprofile",
   github: "https://github.com/yourprofile",
   instagram: "https://instagram.com/yourprofile",
@@ -26,17 +26,6 @@ Beyond full-stack engineering, I also have a strong interest in immersive techno
 I also work on mobile development using React Native and Flutter, and I continue to broaden my technical focus through DevOps automation, workflow improvement, and AI-powered solutions that help teams deliver faster, smarter, and with greater consistency.`;
 
 export const experience = [
-  { role: "Senior Programmer", company: "ISySS-CDM CSU", year: "2026" },
-  { role: "Systems Analyst", company: "DA-BAFE ABEMIS3.0", year: "2025" },
-  { role: "Part Time Faculty", company: "CCIS-CSU", year: "2024" },
-  { role: "Evaluator", company: "FaMRIA, DA BAFE", year: "2024" },
-  {
-    role: "Master of Science in Information Tech",
-    company: "Caraga State University",
-    year: "2024",
-  },
-  { role: "Junior Developer", company: "MARVELTechnologies", year: "2022" },
-  { role: "Admin Staff", company: "OWWA Caraga", year: "2019-2022" },
   {
     role: "BS Information Technology",
     company: "Caraga State University",
@@ -55,7 +44,6 @@ export const techStack = {
     "Animation",
     "Texture Editing",
     "Unity Game Engine",
-    "C#",
   ],
 };
 
