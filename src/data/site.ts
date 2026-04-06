@@ -7,19 +7,19 @@ export const site = {
   /** Show verified checkmark next to name */
   verified: true,
   /** Optional: Facebook profile URL – verified badge links here when set */
-  facebookUrl: "" as string | undefined,
+  facebookUrl: "https://www.facebook.com/sophia.acebes" as string | undefined,
   email: "sophiacalimbo@email.com",
-  calendlyUrl: "https://calendly.com/your-link",
+  calendlyUrl: "https://calendly.com/sophiacalimbo/30min",
   blogUrl: "https://blog.yoursite.com",
-  linkedin: "https://linkedin.com/in/yourprofile",
-  github: "https://github.com/yourprofile",
-  instagram: "https://instagram.com/yourprofile",
+  linkedin: "https://www.linkedin.com/in/s-calimbo-63a231328/",
+  github: "https://github.com/scalimbo",
+  instagram: "https://www.instagram.com/sophiacalimbo/",
 };
 
 export const heroBadges: { label: string; href: string; subtitle?: string }[] =
   [];
 
-export const about = `I am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
+export const about = `We am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
 
 Beyond full-stack engineering, I also have a strong interest in immersive technologies and have previously contributed to a DOST-funded initiative, MARVELTechnologies, which focused on building AR/VR solutions through mining simulation use cases. That experience expanded my perspective on simulation-driven learning and interactive environments, and it strengthened my ability to design solutions across both traditional and emerging platforms.
 
@@ -35,31 +35,38 @@ export const experience = [
 ];
 
 export const techStack = {
-  frontend: ["JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
-  backend: ["Node.js", "Python", "PostgreSQL", "MongoDB"],
-  devops: ["AWS", "Docker", "Kubernetes", "GitHub Actions"],
+  frontend: [
+    "JavaScript",
+    "TypeScript",
+    "Next.js",
+    "Vue.js",
+    "Flutter",
+    "Dart",
+  ],
+  backend: ["Python", "PostgreSQL"],
+  devops: ["GitHub Actions"],
   modeling: [
     "3D Modeling",
     "Blender",
     "Animation",
     "Texture Editing",
-    "Unity Game Engine",
+    "Rigging",
   ],
 };
 
 export const projects = [
   {
-    name: "ISySS-CDM",
-    description: "CSU & PNP collaborative system platform",
-    url: "https://isyss-cdm.web.app/",
-    domain: "isyss-cdm.web.app",
+    name: "Trash Detector",
+    description:
+      "Detects different types of trash using AI and computer vision",
+    url: "https://trash-detector.vercel.app/",
+    domain: "trash-detector.vercel.app",
   },
   {
-    name: "ABEMIS 3.0",
-    description:
-      "Agricultural & Biosystems Engineering Management Information System",
-    url: "https://abemis-front.vercel.app/",
-    domain: "abemis-front.vercel.app",
+    name: "Taskhub",
+    description: "Web-based task management application",
+    url: "https://task-hub-two.vercel.app/",
+    domain: "task-hub-two.vercel.app",
   },
   {
     name: "MARVEL Technologies",
