@@ -31,7 +31,7 @@ export const experience = [
     company: "Caraga State University",
     year: "2019",
   },
-  { role: "Hello World", company: "Started my coding journey", year: "2015" },
+  { role: "Hello World", company: "Started my coding journey", year: "2019" },
 ];
 
 export const techStack = {
@@ -69,16 +69,11 @@ export const projects = [
     domain: "task-hub-two.vercel.app",
   },
   {
-    name: "MARVEL Technologies",
-    description: "AR/VR technology initiative and simulation platform",
-    url: "https://chci.carsu.edu.ph/marvel-technologies/",
-    domain: "chci.carsu.edu.ph",
-  },
-  {
-    name: "DYNAMIS Workout Tracker",
-    description: "AI-powered workout tracker",
-    url: "https://dynamis-app.online",
-    domain: "dynamis-app.online",
+    name: "Rice Leaf Detector",
+    description:
+      "A mobile-based application that detects rice crop diseases from its leaf using AI and computer vision",
+    url: "https://github.com/cindycariate/rice_detector",
+    domain: "github.com/cindycariate/rice_detector",
   },
 ];
 
@@ -89,19 +84,34 @@ export const certifications: {
   year?: string;
 }[] = [
   {
-    name: "SPARK Technical Training for Blockchain Cryptocurrency Specialist Certification",
-    issuer: "Department of Information and Communications Technology",
+    name: "Course Completion Certificate in Introduction to HTML",
+    issuer: "SoloLearn",
+    href: "https://www.sololearn.com/certificates/CC-0QLK7ZKK",
+  },
+  {
+    name: "Course Completion Certificate in Introduction to CSS",
+    issuer: "SoloLearn",
     href: "#",
   },
   {
-    name: "Coursera UX/UI Certification",
-    issuer: "Google",
+    name: "Course Completion Certificate in Introduction to SQL",
+    issuer: "SoloLearn",
     href: "#",
   },
   {
-    name: "Project Management",
-    issuer: "University of the Philippines",
-    href: "#",
+    name: "Course Completion Certificate in Introduction to JavaScript",
+    issuer: "SoloLearn",
+    href: "https://www.sololearn.com/certificates/CC-LRWD1R1N",
+  },
+  {
+    name: "Course Completion Certificate in Introduction to C",
+    issuer: "SoloLearn",
+    href: "https://www.sololearn.com/certificates/CC-ZBUWTXRX",
+  },
+  {
+    name: "Course Completion Certificate in Introduction to Java",
+    issuer: "SoloLearn",
+    href: "https://www.sololearn.com/certificates/CC-XJUA2AHI",
   },
 ];
 
