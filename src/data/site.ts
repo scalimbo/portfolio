@@ -168,7 +168,7 @@ export const recommendations = [
 
 export const memberships = [
   {
-    name: "Philippine Society of IT Educators – Caraga Chapter",
-    href: "https://psite.org/",
+    name: "Society of Information Technology Students – Caraga State University (SITS-CSU)",
+    href: "https://www.facebook.com/sites.csu",
   },
 ];
