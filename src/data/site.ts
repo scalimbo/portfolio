@@ -172,3 +172,13 @@ export const memberships = [
     href: "https://www.facebook.com/sites.csu",
   },
 ];
+
+export const galleryImages: { src: string; alt: string }[] = [
+  { src: "/gallery/c.png", alt: "C Programming" },
+  { src: "/gallery/css.png", alt: "CSS" },
+  { src: "/gallery/html.png", alt: "HTML" },
+  { src: "/gallery/java.png", alt: "Java" },
+  { src: "/gallery/Javascript.png", alt: "JavaScript" },
+  { src: "/gallery/sql.png", alt: "SQL" },
+  { src: "/gallery/thesis.jpg", alt: "Thesis Project" },
+];

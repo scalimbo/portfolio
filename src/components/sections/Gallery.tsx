@@ -1,17 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const PLACEHOLDER_COUNT = 15;
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { galleryImages } from "@/data/site";
 
 export function Gallery() {
   const [startIndex, setStartIndex] = useState(0);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
   const visibleCount = 5;
-  const maxStart = Math.max(0, PLACEHOLDER_COUNT - visibleCount);
+  const maxStart = Math.max(0, galleryImages.length - visibleCount);
 
   function prev() {
     setStartIndex((i) => (i <= 0 ? maxStart : i - 1));
@@ -39,18 +39,25 @@ export function Gallery() {
           <div className="grid flex-1 grid-cols-5 gap-2">
             {Array.from({ length: visibleCount }, (_, offset) => {
               const i = startIndex + offset;
+              const image = galleryImages[i];
               return (
                 <Card
                   key={i}
                   className={cn(
                     "aspect-square cursor-pointer overflow-hidden transition hover:ring-2 hover:ring-primary",
-                    activeIndex === i && "ring-2 ring-primary"
+                    activeIndex === i && "ring-2 ring-primary",
                   )}
                   onClick={() => setActiveIndex(activeIndex === i ? null : i)}
                 >
-                  <div className="flex h-full w-full items-center justify-center bg-muted text-muted-foreground">
-                    <span className="text-xs font-medium">{i + 1}</span>
-                  </div>
+                  {image && (
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={200}
+                      height={200}
+                      className="h-full w-full object-cover"
+                    />
+                  )}
                 </Card>
               );
             })}
@@ -65,6 +72,35 @@ export function Gallery() {
           </button>
         </div>
       </div>
+
+      {/* Enlarged Image Modal */}
+      {activeIndex !== null && galleryImages[activeIndex] && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setActiveIndex(null)}
+        >
+          <div
+            className="relative flex max-h-[90vh] max-w-[90vw] items-center justify-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={() => setActiveIndex(null)}
+              aria-label="Close enlarged image"
+              className="absolute right-2 top-2 z-10 rounded-md bg-black/50 p-1 transition hover:bg-black/70"
+            >
+              <X className="h-6 w-6 text-white" />
+            </button>
+            <Image
+              src={galleryImages[activeIndex].src}
+              alt={galleryImages[activeIndex].alt}
+              width={1200}
+              height={1200}
+              className="max-h-[85vh] w-auto object-contain"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
