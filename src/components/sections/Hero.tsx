@@ -40,7 +40,7 @@ function Avatar() {
 
   return (
     <div
-      className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border-2 border-border bg-muted text-lg font-semibold text-muted-foreground sm:h-24 sm:w-24"
+      className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border-4 border-border bg-muted text-lg font-semibold text-muted-foreground sm:h-24 sm:w-24"
       aria-hidden
     >
       {initials || "?"}

@@ -3,7 +3,7 @@ export const site = {
   location: "Butuan City, Philippines",
   tagline: "Backend Developer | Web Developer | 3d Modeler",
   /** Optional: URL to profile image (e.g. /avatar.jpg). Leave empty for initials placeholder. */
-  avatarUrl: "" as string | undefined,
+  avatarUrl: "/gallery/profile.jpg" as string | undefined,
   /** Show verified checkmark next to name */
   verified: true,
   /** Optional: Facebook profile URL – verified badge links here when set */
