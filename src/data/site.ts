@@ -19,11 +19,12 @@ export const site = {
 export const heroBadges: { label: string; href: string; subtitle?: string }[] =
   [];
 
-export const about = `We am a full-stack software engineer with hands-on experience in end-to-end product development, from requirements gathering and system planning to implementation, optimization, and long-term maintenance. I am currently part of ISySS-CDM, a three-year project where I work as a senior programmer and take on key responsibilities in data gathering, software development, architecture design, and making sure the codebase remains efficient, scalable, and maintainable as the project grows.
+export const about = `I am a full-stack web developer with hands on experience in live website projects, planning necessities to implementation. I have also dabbled in mobile development using Flutter and Dart, and machine learning. 
 
-Beyond full-stack engineering, I also have a strong interest in immersive technologies and have previously contributed to a DOST-funded initiative, MARVELTechnologies, which focused on building AR/VR solutions through mining simulation use cases. That experience expanded my perspective on simulation-driven learning and interactive environments, and it strengthened my ability to design solutions across both traditional and emerging platforms.
+Aside from coding, I am also interested and has minor experience in 3d modeling with Blender, 2d animation and drawing. These interests and experience helps me make better designs. And can be incorporated in my future goal of learning game development. 
 
-I also work on mobile development using React Native and Flutter, and I continue to broaden my technical focus through DevOps automation, workflow improvement, and AI-powered solutions that help teams deliver faster, smarter, and with greater consistency.`;
+I am eager to learn new and novel tech an apply it to my learning and projects.
+`;
 
 export const experience = [
   {

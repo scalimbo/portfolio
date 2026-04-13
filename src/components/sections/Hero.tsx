@@ -5,7 +5,7 @@ import { site, heroBadges } from "@/data/site";
 import {
   Calendar,
   Mail,
-  BookOpen,
+  Github,
   MapPin,
   Check,
   Trophy,
@@ -63,8 +63,8 @@ export function Hero() {
                 <h1 className="truncate text-lg font-bold tracking-tight sm:text-xl md:text-2xl">
                   {site.name}
                 </h1>
-                {site.verified && (
-                  site.facebookUrl ? (
+                {site.verified &&
+                  (site.facebookUrl ? (
                     <a
                       href={site.facebookUrl}
                       target="_blank"
@@ -82,8 +82,7 @@ export function Hero() {
                         <Check className="h-3 w-3 stroke-[3] sm:h-3.5 sm:w-3.5" />
                       </span>
                     </span>
-                  )
-                )}
+                  ))}
               </div>
               <div className="shrink-0">
                 <ThemeToggle />
@@ -112,22 +111,43 @@ export function Hero() {
             </div>
             <div className="mt-1 flex w-full gap-1.5">
               <Button asChild className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs">
-                <Link href={site.calendlyUrl} target="_blank" rel="noopener" className="flex min-w-0 items-center justify-center gap-1">
+                <Link
+                  href={site.calendlyUrl}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex min-w-0 items-center justify-center gap-1"
+                >
                   <Calendar className="h-3 w-3 shrink-0" />
                   <span className="truncate">Schedule a Call</span>
                   <ArrowRight className="h-3 w-3 shrink-0" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs">
-                <Link href={`mailto:${site.email}`} className="flex min-w-0 items-center justify-center gap-1">
+              <Button
+                asChild
+                variant="outline"
+                className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs"
+              >
+                <Link
+                  href={`mailto:${site.email}`}
+                  className="flex min-w-0 items-center justify-center gap-1"
+                >
                   <Mail className="h-3 w-3 shrink-0" />
                   <span className="truncate">Send Email</span>
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs">
-                <Link href={site.blogUrl} target="_blank" rel="noopener" className="flex min-w-0 items-center justify-center gap-1">
-                  <BookOpen className="h-3 w-3 shrink-0" />
-                  <span className="truncate">Read my blog</span>
+              <Button
+                asChild
+                variant="outline"
+                className="h-8 min-w-0 flex-1 gap-1 px-2 text-xs"
+              >
+                <Link
+                  href={site.github}
+                  target="_blank"
+                  rel="noopener"
+                  className="flex min-w-0 items-center justify-center gap-1"
+                >
+                  <Github className="h-3 w-3 shrink-0" />
+                  <span className="truncate">Check my github</span>
                   <ArrowRight className="h-3 w-3 shrink-0" />
                 </Link>
               </Button>
