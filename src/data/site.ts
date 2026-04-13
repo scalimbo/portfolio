@@ -92,12 +92,12 @@ export const certifications: {
   {
     name: "Course Completion Certificate in Introduction to CSS",
     issuer: "SoloLearn",
-    href: "#",
+    href: "https://www.sololearn.com/certificates/CC-BN7KF5YP",
   },
   {
     name: "Course Completion Certificate in Introduction to SQL",
     issuer: "SoloLearn",
-    href: "#",
+    href: "https://www.sololearn.com/certificates/CC-XTVBKEJ9",
   },
   {
     name: "Course Completion Certificate in Introduction to JavaScript",
